@@ -260,14 +260,6 @@ export const siteContent = {
         href: '#/case-studies/oatly',
         isPlaceholder: false,
       },
-      {
-        title: 'Competitive & Market Analysis',
-        summary:
-          'Placeholder: A competitive landscape analysis with SWOT and messaging opportunities to support product-market fit validation.',
-        focus: ['Competitive analysis', 'Market sizing', 'PMF'],
-        status: 'Drafting',
-        isPlaceholder: true,
-      },
     ],
   },
   notionCaseStudy: {
