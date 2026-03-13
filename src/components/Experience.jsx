@@ -6,8 +6,34 @@ export default function Experience() {
 
   return (
     <section className="experience" id="experience">
-      <SectionHeader title={experience.title} intro="Agency and brand-side experience grounded in measurable delivery." />
-      <div className="timeline">
+      <SectionHeader title={experience.title} intro={experience.intro} />
+      <div className="experience-overview">
+        <div className="experience-summary">
+          <p>{experience.summary}</p>
+        </div>
+        <div className="experience-sectors">
+          <p className="experience-label">Campaign Areas</p>
+          <div className="tag-row">
+            {experience.sectors.map((sector) => (
+              <span className="tag" key={sector}>
+                {sector}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="experience-categories">
+        {experience.categories.map((item, index) => (
+          <article className="experience-category" key={item.title}>
+            <p className="experience-index">{`0${index + 1}`}</p>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </article>
+        ))}
+      </div>
+      <div className="experience-background">
+        <p className="experience-label">Background</p>
+        <div className="timeline">
         {experience.items.map((role) => (
           <article className="timeline-card" key={`${role.company}-${role.role}`}>
             <div className="timeline-header">
@@ -20,13 +46,9 @@ export default function Experience() {
                 <span>{role.dates}</span>
               </div>
             </div>
-            <ul>
-              {role.bullets.map((bullet) => (
-                <li key={bullet}>{bullet}</li>
-              ))}
-            </ul>
           </article>
         ))}
+        </div>
       </div>
     </section>
   )

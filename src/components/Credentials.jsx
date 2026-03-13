@@ -8,7 +8,8 @@ export default function Credentials() {
     <section className="credentials" id="credentials">
       <SectionHeader title="Credentials" intro="Education and tools that support performance-focused marketing delivery." />
       <div className="credentials-grid">
-        <div className="card">
+        <div className="credentials-panel">
+          <p className="credentials-label">Education</p>
           <h3>{education.title}</h3>
           <ul>
             {education.items.map((item) => (
@@ -20,7 +21,8 @@ export default function Credentials() {
             ))}
           </ul>
         </div>
-        <div className="card">
+        <div className="credentials-panel">
+          <p className="credentials-label">Toolkit</p>
           <h3>{skills.title}</h3>
           <div className="tag-row">
             {skills.items.map((item) => (

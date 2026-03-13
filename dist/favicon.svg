@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SK favicon">
+  <rect width="64" height="64" rx="12" fill="#f7f3ec" />
+  <rect x="2" y="2" width="60" height="60" rx="10" fill="none" stroke="#171513" stroke-opacity="0.14" />
+  <text
+    x="50%"
+    y="53%"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="Cormorant Garamond, Georgia, serif"
+    font-size="28"
+    font-weight="700"
+    letter-spacing="-1.2"
+    fill="#171513"
+  >
+    SK
+  </text>
+</svg>

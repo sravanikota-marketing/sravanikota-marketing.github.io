@@ -13,7 +13,7 @@ export default function Nav() {
   return (
     <header className="nav">
       <a className="nav-logo" href="#top">
-        {siteContent.meta.name}
+        SK
       </a>
       <nav className="nav-links">
         {navItems.map((item) => (

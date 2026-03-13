@@ -7,11 +7,14 @@ export default function Highlights() {
   return (
     <section className="highlights" id="highlights">
       <SectionHeader title={highlights.title} intro={highlights.intro} />
-      <div className="card-grid">
-        {highlights.items.map((item) => (
-          <article className="card" key={item.title}>
+      <div className="editorial-grid">
+        {highlights.items.map((item, index) => (
+          <article className={`editorial-card editorial-card-${(index % 3) + 1}`} key={item.title}>
+            <p className="editorial-index">{`0${index + 1}`}</p>
             <h3>{item.title}</h3>
             <p>{item.description}</p>
+            {item.detail ? <p>{item.detail}</p> : null}
+            {item.outcome ? <p className="editorial-outcome">{item.outcome}</p> : null}
             <div className="tag-row">
               {item.tags.map((tag) => (
                 <span className="tag" key={tag}>
