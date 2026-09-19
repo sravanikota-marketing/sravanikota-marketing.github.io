@@ -5,18 +5,22 @@ import { siteContent } from '../data/siteContent'
 
 export default function OatlyCaseStudy() {
   const { oatlyCaseStudy } = siteContent
-  const heroRef = useRef(null)
   const videoRef = useRef(null)
 
   useEffect(() => {
-    heroRef.current?.scrollIntoView({ block: 'start', inline: 'nearest' })
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+    const previousTitle = document.title
+    document.title = 'Oatly Iced Coffee GTM Case Study | Sravani Kota'
+    return () => {
+      document.title = previousTitle
+    }
   }, [])
 
   return (
     <div className="app">
       <Nav />
       <main className="case-study-page">
-        <section className="case-study-hero" ref={heroRef}>
+        <section className="case-study-hero">
           <a className="case-study-back" href="#product-marketing">
             Back to portfolio
           </a>

@@ -14,6 +14,8 @@
   --card: rgba(255, 255, 255, 0.96);
   --card-border: rgba(23, 27, 42, 0.08);
   --line: rgba(23, 27, 42, 0.08);
+  --chip-bg: rgba(32, 42, 68, 0.05);
+  --chip-border: rgba(23, 27, 42, 0.1);
   --shadow: 0 24px 60px -32px rgba(17, 24, 39, 0.16);
   --section-offset: 28px;
   --body-size: 0.96rem;
@@ -155,6 +157,39 @@ a {
   color: var(--accent-strong);
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+}
+
+.nav-mobile-menu {
+  display: none;
+}
+
 .hero {
   display: block;
   padding-top: 76px;
@@ -194,11 +229,11 @@ a {
   align-items: center;
   padding: 10px 16px;
   border-radius: 999px;
-  background: rgba(250, 246, 240, 0.72);
+  background: var(--chip-bg);
   color: var(--accent);
   font-weight: 600;
   font-size: 0.82rem;
-  border: 1px solid rgba(23, 21, 19, 0.12);
+  border: 1px solid var(--chip-border);
 }
 
 .hero-badge .dot {
@@ -234,7 +269,7 @@ a {
 .hero-identity-separator {
   width: 28px;
   height: 1px;
-  background: rgba(23, 20, 17, 0.2);
+  background: rgba(23, 27, 42, 0.2);
 }
 
 .hero-headline {
@@ -333,8 +368,8 @@ a {
 .btn.small {
   padding: 8px 14px;
   font-size: 0.85rem;
-  background: rgba(250, 246, 240, 0.84);
-  border-color: rgba(23, 21, 19, 0.12);
+  background: var(--chip-bg);
+  border-color: var(--chip-border);
 }
 
 .btn:hover {
@@ -346,7 +381,7 @@ a {
   grid-template-columns: 1fr;
   gap: 0;
   margin-bottom: 14px;
-  border-top: 1px solid rgba(23, 21, 19, 0.12);
+  border-top: 1px solid rgba(23, 27, 42, 0.12);
 }
 
 .hero-proof-card {
@@ -398,11 +433,11 @@ a {
 .chip {
   padding: 7px 10px;
   border-radius: 999px;
-  background: rgba(250, 246, 240, 0.78);
+  background: var(--chip-bg);
   color: var(--accent);
   font-size: 0.74rem;
   font-weight: 600;
-  border: 1px solid rgba(23, 21, 19, 0.12);
+  border: 1px solid var(--chip-border);
 }
 
 .hero-visual {
@@ -425,7 +460,7 @@ a {
   height: 10px;
   border-radius: 999px;
   background: var(--ink);
-  box-shadow: 0 0 0 6px rgba(23, 21, 19, 0.05);
+  box-shadow: 0 0 0 6px rgba(23, 27, 42, 0.05);
 }
 
 .eyebrow {
@@ -650,7 +685,7 @@ a {
 
 .timeline-card ul {
   padding-left: 18px;
-  margin: 0;
+  margin: 16px 0 0;
   color: var(--muted);
 }
 
@@ -732,7 +767,7 @@ a {
 }
 
 .card {
-  background: rgba(250, 246, 240, 0.88);
+  background: rgba(255, 255, 255, 0.92);
   border: 1px solid var(--card-border);
   border-radius: 18px;
   padding: 22px;
@@ -747,12 +782,12 @@ a {
   position: absolute;
   inset: 0 0 auto 0;
   height: 1px;
-  background: linear-gradient(90deg, rgba(23, 21, 19, 0.16), transparent);
+  background: linear-gradient(90deg, rgba(23, 27, 42, 0.16), transparent);
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 32px 64px -40px rgba(23, 20, 17, 0.5);
+  box-shadow: 0 32px 64px -40px rgba(23, 27, 42, 0.5);
 }
 
 .tag-row {
@@ -765,11 +800,11 @@ a {
 .tag {
   padding: 6px 10px;
   border-radius: 999px;
-  background: rgba(250, 246, 240, 0.9);
+  background: var(--chip-bg);
   color: var(--accent);
   font-size: 0.78rem;
   font-weight: 600;
-  border: 1px solid rgba(23, 21, 19, 0.1);
+  border: 1px solid var(--chip-border);
 }
 
 .case-header {
@@ -860,8 +895,27 @@ a {
 }
 
 .testimonial-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   padding-left: 18px;
-  border-left: 1px solid rgba(23, 21, 19, 0.12);
+  border-left: 1px solid rgba(23, 27, 42, 0.12);
+}
+
+.quote-avatar {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .quote-name {
@@ -1240,7 +1294,7 @@ a {
   padding: 14px 16px;
   text-align: left;
   vertical-align: top;
-  border-bottom: 1px solid rgba(23, 21, 19, 0.1);
+  border-bottom: 1px solid rgba(23, 27, 42, 0.1);
   font-size: 0.88rem;
   line-height: 1.5;
 }
@@ -1277,6 +1331,37 @@ a {
 
   .nav-links {
     display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 16px;
+    right: 16px;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+  }
+
+  .nav-mobile-menu a {
+    padding: 12px 2px;
+    font-size: 0.95rem;
+    color: var(--ink);
+    font-weight: 600;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .nav-mobile-menu a:last-child {
+    border-bottom: 0;
   }
 
   .hero {
@@ -1341,7 +1426,7 @@ a {
   .testimonial-meta {
     padding-left: 0;
     border-left: 0;
-    border-top: 1px solid rgba(23, 21, 19, 0.12);
+    border-top: 1px solid rgba(23, 27, 42, 0.12);
     padding-top: 14px;
   }
 

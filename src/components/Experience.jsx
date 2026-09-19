@@ -46,6 +46,13 @@ export default function Experience() {
                 <span>{role.dates}</span>
               </div>
             </div>
+            {role.bullets ? (
+              <ul>
+                {role.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+            ) : null}
           </article>
         ))}
         </div>

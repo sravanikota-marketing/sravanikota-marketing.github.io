@@ -9,11 +9,11 @@ export const siteContent = {
     label: 'Marketing Portfolio',
     headline: 'Turning insights into campaigns, positioning, and go-to-market strategies.',
     subheadline:
-      'I work across digital marketing and campaign execution, building performance-driven campaigns across Amazon Ads, retail media, and multi-locale launches. My experience focuses on using insights and data to improve campaign performance, messaging, and audience targeting.',
+      'I currently work as a Senior Digital Account Executive at Hoffman Agency, leading digital strategy for large-scale B2B fintech and IT distributor clients. My broader experience spans performance-driven campaigns across Amazon Ads, retail media, and multi-locale launches, with a focus on using insights and data to improve campaign performance, messaging, and audience targeting.',
     proofPoints: [
       {
-        value: 'Amazon Ads',
-        label: 'Campaign execution across gaming and retail media environments',
+        value: 'Hoffman Agency',
+        label: 'Senior Digital Account Executive for B2B fintech and IT distributor clients',
       },
       {
         value: 'Campaign Optimisation',
@@ -60,7 +60,7 @@ export const siteContent = {
     ],
   },
   roles: {
-    title: "Roles I'm exploring in the UK",
+    title: 'Open to the right opportunity in:',
     items: [
       'Marketing Manager',
       'Social Media Manager',
@@ -76,15 +76,17 @@ export const siteContent = {
       'I am a marketing professional with experience working across digital campaigns, retail media, and international marketing environments. My work has focused on campaign execution and optimisation, supporting brands running campaigns across Amazon Ads and retail media platforms while improving performance through data and insights.',
       'My experience sits between marketing execution and analytical work. I regularly work with campaign data to understand performance, refine messaging, and improve audience targeting. This has helped me build a practical understanding of how campaigns perform across different platforms and markets.',
       'Through work across gaming and retail media campaigns, I have gained experience supporting multi market campaigns and collaborating with teams across different functions. I am particularly interested in roles where I can continue developing across marketing, growth marketing, and product marketing.',
-      'I am currently based in London and exploring opportunities across marketing and product marketing roles in the United Kingdom.',
+      'I am currently based in London, working as a Senior Digital Account Executive at Hoffman Agency. I am not actively job hunting, but always open to a conversation about the right marketing or product marketing opportunity.',
     ],
     notes: [
       {
         title: 'Platforms',
         items: [
+          'Google Ads',
+          'LinkedIn Campaign Manager',
           'Amazon Ads',
           'Retail media platforms',
-          'Campaign management and reporting tools',
+          'GA4 and campaign reporting tools',
         ],
       },
       {
@@ -111,7 +113,7 @@ export const siteContent = {
     intro:
       'A broader view of the campaign environments, platforms, and marketing work I have supported across brand, agency, and retail media settings.',
     summary:
-      'My work spans campaign execution, account management, retail media, influencer-led marketing, and performance reporting. Across in-house and agency-side roles, I have supported brands running campaigns across gaming, entertainment, healthcare, real estate, and consumer categories, with a focus on delivery, optimisation, and cross-functional coordination.',
+      'My work spans paid campaign execution, account management, retail media, executive and personal branding content, and performance reporting. Across in-house and agency-side roles, I have supported brands running campaigns across gaming, entertainment, healthcare, real estate, and B2B fintech and IT distribution across EMEA, with a focus on delivery, optimisation, and cross-functional coordination.',
     categories: [
       {
         title: 'Retail Media & Platform Campaigns',
@@ -131,6 +133,7 @@ export const siteContent = {
       },
     ],
     sectors: [
+      'B2B fintech & IT (EMEA)',
       'Gaming & entertainment',
       'Retail media',
       'Luxury & lifestyle',
@@ -139,6 +142,17 @@ export const siteContent = {
       'Events & influencer campaigns',
     ],
     items: [
+      {
+        role: 'Senior Digital Account Executive',
+        company: 'Hoffman Agency',
+        location: 'London, UK',
+        dates: 'May 2026 - Present',
+        bullets: [
+          'Lead digital account strategy for large-scale B2B fintech and IT distributor clients across EMEA at a global technology-focused marketing and communications agency.',
+          'Build, monitor, and optimise paid campaigns across Google Ads and LinkedIn Ads, translating performance data into reporting and recommendations for clients.',
+          'Develop executive profile and personal branding content for client leadership, alongside organic social media content supporting tech brands across EMEA.',
+        ],
+      },
       {
         role: 'Creative Campaign Manager',
         company: 'Amazon Ads (Contract)',
@@ -514,16 +528,22 @@ export const siteContent = {
   skills: {
     title: 'Core Competencies',
     items: [
+      'Google Ads',
+      'LinkedIn Campaign Manager',
       'Amazon Ads (DSP, Sponsored Ads)',
       'Retail Media Advertising',
       'Programmatic Campaign Execution',
       'Campaign Trafficking & QA',
       'Campaign Performance Optimisation',
+      'GA4 (Google Analytics 4)',
       'Marketing Analytics & Reporting',
+      'AI-Assisted Marketing Tools',
       'A/B Testing',
       'E-commerce Advertising',
       'Video & Streaming Ads (Prime Video, Twitch)',
       'Multi-market Campaign Delivery',
+      'Executive & Personal Branding Content',
+      'Organic Social Media Content',
       'Salesforce CRM',
       'Excel for Data Analysis',
     ],

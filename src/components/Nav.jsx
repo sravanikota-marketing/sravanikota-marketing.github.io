@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { siteContent } from '../data/siteContent'
 
 const navItems = [
@@ -10,9 +11,11 @@ const navItems = [
 ]
 
 export default function Nav() {
+  const [open, setOpen] = useState(false)
+
   return (
     <header className="nav">
-      <a className="nav-logo" href="#top">
+      <a className="nav-logo" href="#top" onClick={() => setOpen(false)}>
         SK
       </a>
       <nav className="nav-links">
@@ -22,9 +25,31 @@ export default function Nav() {
           </a>
         ))}
       </nav>
-      <a className="btn small" href={siteContent.hero.ctas[0].href}>
-        Resume
-      </a>
+      <div className="nav-right">
+        <a className="btn small" href={siteContent.hero.ctas[0].href}>
+          Resume
+        </a>
+        <button
+          type="button"
+          className="nav-toggle"
+          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-expanded={open}
+          onClick={() => setOpen((value) => !value)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+      {open ? (
+        <nav className="nav-mobile-menu">
+          {navItems.map((item) => (
+            <a key={item.label} href={item.href} onClick={() => setOpen(false)}>
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      ) : null}
     </header>
   )
 }
